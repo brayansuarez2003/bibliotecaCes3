@@ -1,0 +1,15 @@
+<!ELEMENT libreria (portada,libro+)>
+        <!ELEMENT portada EMPTY>
+        <!ATTLIST portada portada CDATA #REQUIRED>
+<!ATTLIST libreria nombre CDATA #REQUIRED >
+<!ATTLIST libreria centro CDATA #REQUIRED >
+        <!ELEMENT libro (titulo,autor+,editorial+,precio)>
+        <!ATTLIST libro anyo CDATA #REQUIRED>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (apellidoAutor+,nombreAutor+)>
+            <!ATTLIST autor fotoAutor CDATA #REQUIRED>
+            <!ATTLIST autor documento CDATA #REQUIRED>
+            <!ELEMENT apellidoAutor (#PCDATA)>
+            <!ELEMENT nombreAutor (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>

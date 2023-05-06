@@ -1,14 +1,24 @@
 <!DOCTYPE libreria SYSTEM "libreria.dtd">
 <libreria nombre="Tomás Carrasquilla" centro="poblado" >
-    <portada portada="XSD"/>
-    <libro anyo="1994" >
-        <titulo>TCP/IP Illustrated</titulo>
-        <autor documento ="1007055117" fotoAutor="https://lamenteesmaravillosa.com/wp-content/uploads/2021/09/william-shakespeare-768x512.png">
-            <apellidoAutor>stevens</apellidoAutor>
-            <nombreAutor>W.</nombreAutor>
-        </autor>
-        <editorial>Addison-Wesley</editorial>
-        <precio>65.95</precio>
-    </libro>
-
+    <portada portada="https://www.culturaydeporte.gob.es/.imaging/mte/mcd-theme/contenido-cle-mdh/dam/mcd/cultura/mc/biblioteca-cultura/portada/bookcrossing/jcr:content/bookcrossing.jpg.jpg"/>
+    <libros>
+        <libro anyo="2024" codigoPais="FRA">
+            <titulo>TCP/IP Illustrated</titulo>
+            <autor documento ="1007055117" fotoAutor="https://lamenteesmaravillosa.com/wp-content/uploads/2021/09/william-shakespeare-768x512.png">
+                <apellidoAutor>stevens</apellidoAutor>
+                <nombreAutor>W.</nombreAutor>
+            </autor>
+            <editorial>Addison-Wesley</editorial>
+            <precio>65.95</precio>
+        </libro>
+        <libro anyo="1994" codigoPais="FRA">
+            <titulo>TCP/IP Illustrated</titulo>
+            <autor documento ="1007055117" fotoAutor="https://lamenteesmaravillosa.com/wp-content/uploads/2021/09/william-shakespeare-768x512.png">
+                <apellidoAutor>stevens</apellidoAutor>
+                <nombreAutor>W.</nombreAutor>
+            </autor>
+            <editorial>Addison-Wesley</editorial>
+            <precio>65.95</precio>
+        </libro>
+    </libros>
 </libreria>

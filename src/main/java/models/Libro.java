@@ -1,16 +1,27 @@
 package models;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
-public class libro {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Libro {
+    private int anyo;
+    private  String codigoPais;
     private String titulo;
     private String editorial;
-    private String anyo;
     private int precio;
 
-    public String getAnyo() {
+
+    public Libro() {
+    }
+
+    public Libro(String titulo) {
+        this.titulo = titulo;
+    }
+    public int getAnyo() {
         return anyo;
     }
 
-    public void setAnyo(String anyo) {
+    public void setAnyo(int anyo) {
         this.anyo = anyo;
     }
 
@@ -37,4 +48,5 @@ public class libro {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
+
 }

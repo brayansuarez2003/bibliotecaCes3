@@ -1,11 +1,13 @@
 package models;
 
-public class autor {
+public class Autor {
 
     private String documento;
     private String fotoAutor;
     private String apellidoAutor;
     private String nombreAutor;
+
+
 
 
     public String getDocumento() {

@@ -5,10 +5,19 @@ public class libreria {
     private String nombre;
     private String centro;
     private String portada;
-    private String anyo;
-    private String titulo;
-    private libro libro;
-    private autor autores;
+
+    List<Libro>libro;
+    List<Autor> autor;
+
+
+
+    public String getPortada() {
+        return portada;
+    }
+
+    public void setPortada(String portada) {
+        this.portada = portada;
+    }
 
     public String getNombre() {
         return nombre;
@@ -26,43 +35,20 @@ public class libreria {
         this.centro = centro;
     }
 
-    public String getPortada() {
-        return portada;
-    }
-
-    public void setPortada(String portada) {
-        this.portada = portada;
-    }
-
-    public String getAnyo() {
-        return anyo;
-    }
-
-    public void setAnyo(String anyo) {
-        this.anyo = anyo;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public models.libro getLibro() {
+    public List<Libro> getLibro() {
         return libro;
     }
 
-    public void setLibro(models.libro libro) {
+    public void setLibro(List<Libro> libro) {
         this.libro = libro;
     }
 
-    public autor getAutores() {
-        return autores;
+
+    public List<Autor> getAutor() {
+        return autor;
     }
 
-    public void setAutores(autor autores) {
-        this.autores = autores;
+    public void setAutor(List<Autor> autor) {
+        this.autor = autor;
     }
 }

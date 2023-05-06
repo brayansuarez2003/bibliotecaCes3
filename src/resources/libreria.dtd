@@ -1,15 +1,22 @@
-<!ELEMENT libreria (portada,libro+)>
-        <!ELEMENT portada EMPTY>
-        <!ATTLIST portada portada CDATA #REQUIRED>
+<!--Libreria-->
+<!ELEMENT libreria (portada,libros)>
 <!ATTLIST libreria nombre CDATA #REQUIRED >
 <!ATTLIST libreria centro CDATA #REQUIRED >
+<!--Portada-->
+        <!ELEMENT portada EMPTY>
+        <!ATTLIST portada portada CDATA #REQUIRED>
+<!--libros-->
+        <!ELEMENT libros (libro*)>
         <!ELEMENT libro (titulo,autor+,editorial+,precio)>
-        <!ATTLIST libro anyo CDATA #REQUIRED>
+        <!ATTLIST libro anyo CDATA #REQUIRED >
+        <!ATTLIST libro codigoPais CDATA #REQUIRED codigoPais (ESP | FRA | ITA | ALE) "ESP" >
         <!ELEMENT titulo (#PCDATA)>
+        <!--Autor-->
         <!ELEMENT autor (apellidoAutor+,nombreAutor+)>
             <!ATTLIST autor fotoAutor CDATA #REQUIRED>
             <!ATTLIST autor documento CDATA #REQUIRED>
             <!ELEMENT apellidoAutor (#PCDATA)>
             <!ELEMENT nombreAutor (#PCDATA)>
+<!--Continuación de libros-->
         <!ELEMENT editorial (#PCDATA)>
         <!ELEMENT precio (#PCDATA)>
